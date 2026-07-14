@@ -1,9 +1,6 @@
 node_modules/
 
-# app.post("/add-booking" ,async(req,res) => {
-#     await Booking.create(req.body)
-#     res.json({"status" : "Success"})
-# })
+
 
 # app.post("/view-bookings" , async(req,res) => {
 #     const bookings = await Booking.find()
