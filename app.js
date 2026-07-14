@@ -38,6 +38,19 @@ app.get("/test", (req,res) => {
     res.send("Hi")
 })
 
+
+app.post("/add-booking" ,async(req,res) => {
+    await Booking.create(req.body)
+    res.json({"status" : "Success"})
+})
+
+
+app.post("/view-bookings" , async(req,res) => {
+    const bookings = await Booking.find()
+    res.json(bookings)
+})
+
+
 app.listen(3000,() => {
     console.log("Server Started")
 })
