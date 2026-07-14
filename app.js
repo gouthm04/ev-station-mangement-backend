@@ -44,6 +44,13 @@ app.post("/add-booking" ,async(req,res) => {
     res.json({"status" : "Success"})
 })
 
+
+app.post("/view-bookings" , async(req,res) => {
+    const bookings = await Booking.find()
+    res.json(bookings)
+})
+
+
 app.listen(3000,() => {
     console.log("Server Started")
 })

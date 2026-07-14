@@ -2,7 +2,3 @@ node_modules/
 
 
 
-# app.post("/view-bookings" , async(req,res) => {
-#     const bookings = await Booking.find()
-#     res.json(bookings)
-# })
